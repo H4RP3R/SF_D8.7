@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-{% load tz %}
 
 {% block title %}Кэшированное Время{% endblock %}
 
 {% block main_content %}
-    {% localtime on %}
-        {% now "SHORT_DATETIME_FORMAT" %}
-    {% endlocaltime %}
+        {% now  "d M Y H:i:s T" %}
 {% endblock %}

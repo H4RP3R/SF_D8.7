@@ -108,3 +108,5 @@ def get_cache():
 
 
 CACHES = get_cache()
+
+TIME_ZONE = 'UTC'
